@@ -3,9 +3,8 @@
 
 using namespace std;
 
-int numero,r1,r2,r3,r4;
+int numero,r1,r2,r3,r4,r5;
 
-string resultado;
 
 int main()
 {
@@ -13,6 +12,9 @@ int main()
 	cout<<"INGRESE NUMERO"<<endl;
 	cin>>numero;
 	
+	
+	r5 = numero%10;
+	numero =  numero/10;
 	r4 = numero%10;
 	numero =  numero/10;
 	r3 = numero%10;
@@ -23,7 +25,7 @@ int main()
 	numero = numero/10;
 	
 	
-	cout<<r1<<"   "<<r2<<"   "<<r3<<"   "<<r4<<"   "<<endl;
+	cout<<r1<<"   "<<r2<<"   "<<r3<<"   "<<r4<<"   "<<r5<<endl;
 	
 
 	
